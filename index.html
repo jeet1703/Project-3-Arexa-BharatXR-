@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: url("background.jpeg") no-repeat center center fixed;
+            background-size: cover;
+            color: #fff;
+        }
+        .form-container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            border-radius: 8px;
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+        .form-group label {
+            color: #e7e7e7;
+        }
+        .form-control, .form-control-file, .form-control:focus, .form-control-file:focus {
+            background-color: rgb(0, 0, 0);
+            color: #fff;
+            border: 2px solid #fffdfd;
+            border-radius: 8px;
+        }
+        .form-control:focus, .form-control-file:focus {
+            border-color: #007bff;
+        }
+        .form-text {
+            color: #ccc;
+        }
+        .btn-custom {
+            background-color: #fff;
+            color: #000;
+            font-weight: bold;
+            border-radius: 8px;
+        }
+        .btn-custom:hover {
+            background-color: #f8f9fa;
+        }
+        .logo {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <img src="logo.png" alt="Logo" class="img-fluid logo">
+            <h2 class="text-center mb-4 font-weight-bold">REGISTER</h2>
+            <form>
+                <div class="form-group">
+                    <label for="firstName">First Name</label>
+                    <input type="text" class="form-control" id="firstName" placeholder="Enter your first name">
+                </div>
+                <div class="form-group">
+                    <label for="lastName">Last Name</label>
+                    <input type="text" class="form-control" id="lastName" placeholder="Enter your last name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone no.</label>
+                    <input type="text" class="form-control" id="phone" placeholder="Enter your phone number">
+                </div>
+                <div class="form-group">
+                    <label for="designation">Designation</label>
+                    <input type="text" class="form-control" id="designation" placeholder="Enter your designation">
+                </div>
+                <div class="form-group">
+                    <label for="college">College / Company Name</label>
+                    <input type="text" class="form-control" id="college" placeholder="Enter your college or company name">
+                </div>
+                <div class="form-group">
+                    <label for="linkedin">LinkedIn ID</label>
+                    <input type="url" class="form-control" id="linkedin" placeholder="Enter your LinkedIn ID">
+                </div>
+                <div class="form-group">
+                    <label for="snapUsername">Snap Username</label>
+                    <input type="text" class="form-control" id="snapUsername" placeholder="Enter your Snap username">
+                </div>
+                <div class="form-group">
+                    <label for="lensName">Lens Name</label>
+                    <input type="text" class="form-control" id="lensName" placeholder="Enter your Lens name">
+                </div>
+                <div class="form-group">
+                    <label for="arLensType">AR Lens Type</label>
+                    <select class="form-control" id="arLensType">
+                        <option>Choose</option>
+                        <!-- Add options here -->
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="lensLink">Lens link</label>
+                    <input type="url" class="form-control" id="lensLink" placeholder="Enter your Lens link">
+                </div>
+                <div class="form-group">
+                    <label for="demoVideo">Demo video</label>
+                    <input type="file" class="form-control-file" id="demoVideo" accept="video/mp4">
+                    <small class="form-text text-muted">Video Upload up to 10mb, mp4 format only</small>
+                </div>
+                <div class="form-group">
+                    <label for="additionalInfo">Anything you want to share with us?</label>
+                    <textarea class="form-control" id="additionalInfo" rows="3" placeholder="Write here"></textarea>
+                </div>
+                <button type="submit" class="btn btn-custom btn-block">Register</button>
+            </form>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
